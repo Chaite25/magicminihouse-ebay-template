@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta https-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ebay template</title>
+<!-- ======= google fonts ======= -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<!-- ======= css ======= -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<style type="text/css">
+/*  ================================
+global area start
+================================ */
+
+body {
+font-size: 14px;
+font-weight: 400;
+line-height: 1.6;
+font-family: 'Open Sans', sans-serif;
+color: #1a1a1a;
+}
+
+.pro-title,
+.tab-part-area input:checked+label,
+.tab-part-area label:hover,
+.footer-area p {
+border: 1px solid #7E2811;
+background-color: #7E2811;
+}
+
+.product-dec ul li::before,
+.tab-list ul li::before {
+color: #7E2811;
+}
+
+*,
+p {
+font-size: 14px;
+font-family: 'Open Sans', sans-serif;
+}
+
+a,
+a:hover,
+a:focus {
+outline: none;
+text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+a {
+margin: 0;
+padding: 0;
+line-height: 1.3;
+}
+
+.main-div {
+overflow: hidden;
+}
+
+img {
+max-width: 100%;
+max-height: 100%;
+}
+
+/*  ================================
+global area end
+================================ */
+
+/*  ================================
+header area start
+================================ */
+.header-area {
+padding: 30px 0;
+}
+
+.header-wraper {
+overflow: hidden;
+}
+
+.menu-part {
+text-align: right;
+}
+
+.menu-part ul {
+display: inline-block;
+padding: 0;
+}
+
+.menu-part ul li {
+display: inline-block;
+list-style: outside none none;
+}
+
+.menu-part ul li a {
+color: #1a1a1a;
+display: block;
+font-size: 18px;
+text-decoration: none;
+text-transform: uppercase;
+transition: all 0.5s ease 0s;
+font-family: 'Open Sans', sans-serif;
+padding: 5px 30px;
+font-weight: 800;
+}
+
+.menu-part ul li:last-child a {
+margin-right: 0;
+}
+
+/* menu part end */
+
+/*  ================================
+header area end
+================================ */
+
+/*  ================================
+product title area start
+================================ */
+
+.pro-title {
+border-radius: 5px;
+padding: 15px 10px;
+text-align: center;
+margin: 0 0 30px;
+}
+
+.pro-title>h2 {
+font-size: 24px;
+margin: 0;
+font-family: 'Open Sans', sans-serif;
+font-weight: 700;
+color: #fff;
+}
+
+/*  ================================
+product title area end
+================================ */
+
+/*  ================================
+product area start
+================================ */
+
+.product-wraper {
+border: 1px solid #D1D1D1;
+overflow: hidden;
+padding: 0 20px 30px;
+}
+
+.gallery-content {
+text-align: center;
+margin-top: 30px;
+}
+
+.product-dec h3 {
+color: #1a1a1a;
+text-transform: capitalize;
+font-size: 20px;
+margin: 30px 0 20px;
+font-weight: 700;
+}
+
+.product-dec h4 {
+font-weight: 700;
+color: #1a1a1a;
+font-size: 20px;
+line-height: 1.3;
+margin-bottom: 20px;
+}
+
+.product-dec h5 {
+font-family: 'Open Sans', sans-serif;
+font-weight: 600;
+color: #1a1a1a;
+font-size: 16px;
+line-height: 1.3;
+margin-bottom: 5px;
+}
+
+.product-dec ul,
+.tab-list ul {
+margin: 0;
+padding: 0;
+}
+
+.product-dec ul li,
+.tab-list ul li {
+position: relative;
+padding-left: 20px;
+list-style: none;
+margin-bottom: 15px;
+}
+
+.product-dec ul li::before,
+.tab-list ul li::before {
+position: absolute;
+left: 0;
+content: "\f046";
+font-family: fontawesome;
+font-weight: 400;
+}
+
+/*  ================================
+product area end
+================================ */
+
+/*  ================================
+tab area start
+================================ */
+
+.tab-part-area {
+padding: 50px 0 30px;
+}
+
+section.tab-section {
+display: none;
+padding: 40px 45px;
+border: 1px solid #ddd;
+color: #1a1a1a;
+overflow: hidden;
+}
+
+.tab-part-area input {
+display: none;
+}
+
+.tab-part-area label {
+color: #000;
+font-size: 16px;
+font-weight: 600;
+border: 1px solid transparent;
+display: inline-block;
+margin: 0 0 -1px;
+padding: 10px 30px;
+text-align: center;
+text-transform: uppercase;
+background-color: #F8F8FA;
+border: 1px solid #ddd;
+transition: 0.5s;
+}
+
+.tab-part-area label:hover {
+cursor: pointer;
+color: #fff;
+}
+
+.tab-part-area input:checked+label {
+color: #fff;
+}
+
+#tab1:checked~#content1,
+#tab2:checked~#content2,
+#tab3:checked~#content3,
+#tab4:checked~#content4,
+#tab5:checked~#content5 {
+display: block;
+}
+
+.tab-section h3 {
+color: #000;
+font-weight: 600;
+font-size: 18px;
+margin: 0 0 15px;    
+}
+
+/*  ================================
+tab area end
+================================ */
+
+/*  ================================
+footer area end
+================================ */
+
+.footer-area p {
+padding: 20px 0;
+}
+
+.footer-area p {
+font-size: 16px;
+font-weight: 600;
+color: #fff;
+}
+
+/*  ================================
+footer area end
+================================ */
+
+/***** medium Layout *****/
+
+@media (min-width: 992px) and (max-width: 1200px) {}
+
+/***** Tablet Layout *****/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.menu-part ul li a {
+padding: 0 10px;
+}
+}
+
+/***** Mobile Layout *****/
+
+@media only screen and (max-width: 767px) {
+
+*,
+p,
+.footer-area p,
+.footer-area p a {
+font-size: 15px;
+}
+
+.gallery-content {
+height: auto;
+}
+
+.logo {
+text-align: center;
+margin-bottom: 30px;
+}
+
+.menu-part {
+text-align: center;
+padding-top: 0;
+}
+
+.menu-part ul li a {
+font-size: 16px !important;
+padding: 0 9px;
+margin: 0;
+border-bottom: 0;
+}
+
+.pro-title>h2 {
+font-size: 18px;
+}
+
+.product-wraper {
+padding: 0 20px 30px;
+}
+
+.product-dec {
+margin-top: 30px;
+}
+
+.product-dec h3 {
+font-size: 18px;
+}
+
+.product-dec h4 {
+font-size: 16px;
+}
+
+.des-content {
+padding: 15px;
+}
+
+.des-content h1,
+.des-content h2 {
+font-size: 16px;
+}
+
+.tab-part-area label {
+display: block;
+}
+
+section.tab-section {
+padding: 20px 0;
+}
+
+.ex {
+margin: 0;
+padding: 0;
+}
+}
+</style>
+
+</head>
+
+<body>
+<div class="main-div">
+<!-- ======= header area start ======= -->
+<header class="header-area">
+<div class="header-wraper">
+<div class="container">
+<div class="row">
+<!-- header wraper start -->
+<div class="col-md-3 col-sm-4">
+<!-- logo start -->
+<div class="logo">
+<a href="https://www.ebay.com.au/str/magicminihouse" target="_blank"><img src="images/logo.png" alt=""></a>
+</div>
+<!-- logo end -->
+</div>
+<div class="col-md-9 col-sm-8">
+<!-- menu start -->
+<div class="menu-part">
+<nav>
+<ul>
+<li><a href="https://www.ebay.com.au/str/magicminihouse" target="_blank">shop</a></li>
+<li><a href="https://www.ebay.com.au/str/magicminihouse?_tab=about" target="_blank">about us</a></li>
+<li><a href="https://www.ebay.com.au/cnt/intermediatedFAQ?requested=realminico" target="_blank">contact us</a></li>
+</ul>
+</nav>
+</div>
+<!-- menu end -->
+</div>
+</div>
+<!-- header wraper end -->
+</div>
+</div>
+</header>
+<!-- ======= header area end ======= -->
+
+<!-- ======= product title area start ======= -->
+<section class="gallery-area">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="pro-title">
+<h2>
+
+<!-- product title start -->
+
+DIY Mini House Kikis Magic Emporium
+
+<!-- product title end -->
+
+</h2>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ======= product title area end ======= -->
+
+<!-- ======= product images area start ======= -->
+<section class="product-area">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<!-- product wraper star -->
+<div class="product-wraper">
+<div class="col-md-6">
+<!-- images gallery part start -->
+<div class="row">
+<div class="col-md-12">
+<div class="gallery-content">
+
+<!--product image start -->
+
+<img src="https://i.ebayimg.com/images/g/DVAAAOSw6Kxliq66/s-l1600.png" alt="">
+
+<!--product image end -->
+
+</div>
+</div>
+</div>
+<!-- images gallery part end -->
+</div>
+<div class="col-md-6 ex">
+<div class="product-dec">
+
+<!-- product discription part start -->
+<h3>Product details:</h3>
+<p>Build your very own miniature magic emporium with this DIY Mini House kit. It's a creative and hands-on project that results in a charming dollhouse filled with magical details. Perfect for crafters and fantasy enthusiasts.</p>
+<ul>
+<li>Open and close the spell book and watch the crystal ball emit shimmering light.</li>
+<li>Create a magical emporium with 148 pieces in a 1:20 scale.</li>
+<li>Enjoy 10 hours of assembly time to craft this enchanting miniature store.</li>
+</ul>
+
+<h3>What is included:</h3>
+<p> Brand new bricks pieces with paper manual. You need to assemble them into the figure as how in the picture.</p>
+
+<h3>Measurements:</h3>
+<ul>
+<li>7*6*12cm</li>
+</ul>
+<!-- product discription part end -->
+
+</div>
+</div>
+</div>
+<!-- product wraper end -->
+</div>
+</div>
+</div>
+</section>
+<!-- ======= product images area end ======= -->
+
+<div class="tab-part-area">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="tab-area">
+<input id="tab1" name="tabs" checked="" type="radio">
+<label for="tab1">Shipping</label>
+<input id="tab2" name="tabs" type="radio">
+<label for="tab2">payment</label>
+<input id="tab3" name="tabs" type="radio">
+<label for="tab3">Returns</label>
+<input id="tab4" name="tabs" type="radio">
+<label for="tab4">Help &amp; FAQs</label>
+
+<!-- tab shipping start -->
+<section id="content1" class="tab-section">
+<div class="col-md-12">
+<div class="tab-list">
+<h3>***Production/Lead Time***</h3>
+<ul>
+<li>In stock item lead time approximately 3-5 days. </li>
+<li>Please message me if you need the item sooner- I'll make every effort to fill your request.</li>
+<li>When an order that contains different lead time products will be fulfilled in separate shipments.</li>
+</ul>
+
+<h3>***Postage and Delivery***</h3>
+<ul>
+<li>Combined postage will be calculated at the checkout, overages will be refunded after dispatch.</li>
+<li>Under normal circumstances, domestic parcel can be delivered within 3-8 working days to Australian addressee after dispatch, 10-30 Business days for International Customers. International delivery time involves many correlated factors, we can’t guarantee the delivery time simply the delivery is out of our control. When you need an item in urgent, you have to use your own judgement to decide whether the purchase can reach you on time. International parcel can be vary depends your location, the freight routine, customs clearance and how fast the delivery in your country.</li>
+<li>We are not responsible for any tax, duty charges from customs in your country if 
+there is any.</li>
+</ul>
+
+<h3>***Wrong address &amp; Undeliverable packages***</h3>
+<ul>
+<li>If you have made an error in your shipping address, please contact us immediately. If your order has already been shipped, you may have to pay another shipping fee for the re-delivery (Provided that the item is returned to us by the Postal Service Provider). </li>
+<li>If any parcel is returned to us because of failure to deliver (except where the fault is clearly ours or the carriers), we will make a charge equal to the cost of the original postage which will need to be paid before we can resend the parcel to you again. In any instance where it’s our/our carriers’ fault that the order hasn’t been delivered, then we will resend the parcel free of charge. </li>
+</ul>
+
+<h3>***Damaged &amp; Missing package***</h3>
+<ul>
+<li>All items are packed with extra care. We never shipped an item that is damaged, even if the packaging is damaged. If you have received a package that is damaged, it is most likely that it was damaged during the transportation process, please contact us within 48 Receipt hours for a replacement.</li>
+<li>Missing packages marked as "delivered" can sometimes be misplaced. Please check with your local post office, family members, neighbors, and mailman, in many instances, they can locate it for you.</li>
+</ul>
+
+</div>
+</div>
+</section>
+<!-- tab shipping end -->
+
+<!-- tab Payment start -->
+<section id="content2" class="tab-section">
+<div class="col-md-12">
+<div class="tab-list">
+<ul>
+<li>Accept all major credit cards</li>
+</ul>
+<img src="https://chaite25.github.io/magicminihouse--ebay/images/payment.png" alt="">
+<br>
+<br>
+<p><b>Questions: Please message us if you have any questions or concerns.</b></p>
+</div>
+</div>
+</section>
+<!-- tab Payment end -->
+
+<!-- tab returns start -->
+<section id="content3" class="tab-section">
+<div class="col-md-12">
+<div class="tab-list">
+
+<h3>***Return &amp; Refund***</h3>
+<ul>
+<li>If you are not satisfied with your purchase, you can return it for a refund.</li>
+<li>Only item price is eligible for refund. Postage is NOT refundable. Free postage item actual postage will be deducted from the refund amount.</li>
+<li> A 20% re-stocking fee per returned item will be deducted from the refund amount.</li> 
+<li>For refunds the item must be in sale able condition with original packaging and complete with all components and accessories or only partial refund will be provided.</li>
+<li>For return &amp; refund item, buyer is liable for return postage and safety of the parcel.</li>
+</ul>
+<h3>***Disclaimer***</h3>
+<ul>
+<li>We assume no responsibility for any accidents directly or indirectly related to our products.</li> 
+<li>The majority of the items we sell are unsuitable for children due to the intricate nature of the products, and are designed for adult collectors only.</li>
+<li>All our miniature items are NOT suitable for Children under 14. Ensure that there's adult supervision all the time when play real miniature kitchen with kids.</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- tab returns end -->
+
+<!-- tab contact start -->
+<section id="content4" class="tab-section">
+<div class="col-md-12">
+<div class="tab-list">
+<p>Welcome to Magic Mini House! Here you will find 1:6 1:12 1:24 scale unique Dolls house furniture, miniatures, Dolls house decor, dolls fashion accessories shoes and clothes, real mini cooking supplies and other little pieces of happiness.</p>
+<p>For more information about my shop, please read following store policy. Thank you for stopping by! :)</p>
+<br>
+<h3>***Dollhouse Scale. What do I have/What size should I buy?</h3>
+<ul>
+<li>Each dollhouse scale represents a proportional relationship between the miniature and its real-life counterpart.</li>
+</ul>
+<p><b>Here are the details for the specified scales:</b></p>
+<ul>
+<li>1:6 Scale (Play scale or Fashion Doll Scale). In this scale, 1 inch corresponds to 6 inches in full size. Adult dolls are typically around 12 inches (30.5 centimeters) tall in this scale.</li>
+<li>Commonly used for fashion dolls like Blythe, and collectible action figures.</li>
+<li>1:12 Scale (One Inch to One Foot). Widely accepted among collectors of artisan miniatures.</li>
+<li>Most adult dolls are depicted between 5 inches (12.7 centimeters) and 6 inches (15.2 centimeters) in height. Commonly used for OB11 dolls.</li>
+</ul>
+<h3>***Product info***</h3>
+<ul>
+<li>All our detailed scale miniature items are intended for collectors’ dolls house display, NOT suitable for children under the age of 14.</li>
+<li>Please check out the pictures and description for the size, make sure the item is the right size for you, please make up your mind before order. </li>	
+</ul>
+<h3>***Review***</h3>
+<ul>
+<li>Once your item arrives in satisfying condition, please leave feedback &amp; 5 stars rating as building good reputation on eBay is very important to us, and we will share your review with store team to keep up the amazing work.</li>
+<li>If you have any problem with items on arrival, please email us immediately, we will sort it out within 48 hours. If you are not satisfied with our service, please share with us your expectation, and we are happy to listen to and explore any improvement possibility. </li>
+<li>We do care for each step during the transaction, any errors happened during the process which is unintentional. If problem do arise, please contact me first before leaving negative review. Negative review does not resolve issues, communication does.</li>
+</ul>
+
+<h3>Safety Notices</h3>
+<p>Your safety is our top priority, and adhering to the instructions in our safety notices will guarantee you a premium experience.</p>
+<p><b>5V Real mini cooking USB mixer and stove.</b></p>
+<p>Our 5V USB real mini cooking mixer and stove products are hobby product for adult real mini cooking miniaturists, designed to filming captivating videos. Children under the age of 14 must be supervised at all time while play. They do not run at the same voltage and are not manufactured to the same specifications as regular household electrical products. They are not designed to be used for long periods of time. (maximum 15 mins) and please allowing the item to cool thoroughly between uses.</p>
+
+<p><b>Real mini cooking heating source</b></p>
+<p>Our real mini cooking stove products are hobby product for adult real mini cooking miniaturists, designed to filming captivating videos.
+If you’re using a miniature stove or heat source, be cautious. Even though tea light candle flame is small, it can still get hot. Avoid touching it directly.
+Keep the flame low and controlled. Miniature flames can still cause burns or ignite tiny materials.
+</p>
+<p><b>12v Mains-Powered Wired Lights and Components</b></p>
+<p>Our 12v wired lighting products are hobby product for adult miniaturists, designed to bring life and light to your dolls houses and 1:12 and 1:6 scale models.
+They do not run at the same voltage and are not manufactured to the same specifications as regular household lighting or electrical products. They are not designed to be used for long periods of time. (maximum 1 hour) and please allowing the transformer to cool thoroughly between uses.
+</p>
+<p><b>Battery-Operated Lights Containing Lithium Button Batteries</b></p>
+<p>Our battery-operated lights are hobby product for adult miniaturists, designed to bring life and light to your dollhouses and 1:12 scale 1:6 scale models.</p>
+<p>They are not suitable for children under the age of 14 and any batteries, or products containing batteries, should be always kept out of reach of children.</p>
+<p><b>WARNING: CHOKING HAZARD - Small Parts</b></p>
+<p>Our miniature models are hobby products designed for adult miniaturists and collectors. NONE of the products available to purchase on our website are suitable for children under the age of 14. Most contain very small parts which constitute a choking hazard and should be always kept well out of reach of young children. Children under the age of 14 must be supervised at all time while playing dollhouse and real mini kitchen.</p>
+</div>
+</div>
+</section>
+<!-- tab contact end -->
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ======= footer area star ======= -->
+<footer class="footer-area">
+<div class="container">
+<div class="row">
+<div class="col-md-12 text-center">
+<!-- logo start -->
+<div class="footer-logo">
+<a href="" target="_blank"><img src="logo.jpg" alt=""></a>
+</div>
+<!-- logo end -->
+<p>Copyrights All Rights Reserved-Magic Mini House</p>
+</div>
+</div>
+</div>
+</footer>
+<!-- ======= footer area end ======= -->
+</div>
+</body>
+
+</html>
