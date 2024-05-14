@@ -1,0 +1,1 @@
+# magicminihouse-ebay-template
