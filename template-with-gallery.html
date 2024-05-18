@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta https-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ebay template</title>
+<!-- ======= google fonts ======= -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<!-- ======= css ======= -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<style type="text/css">
+/*  ================================
+global area start
+================================ */
+
+body {
+font-size: 14px;
+font-weight: 400;
+line-height: 1.6;
+font-family: 'Open Sans', sans-serif;
+color: #1a1a1a;
+}
+
+.pro-title,
+.tab-part-area input:checked+label,
+.tab-part-area label:hover,
+.footer-area p {
+border: 1px solid #7E2811;
+background-color: #7E2811;
+}
+
+.product-dec ul li::before,
+.tab-list ul li::before {
+color: #7E2811;
+}
+
+*,
+p {
+font-size: 14px;
+font-family: 'Open Sans', sans-serif;
+}
+
+a,
+a:hover,
+a:focus {
+outline: none;
+text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+a {
+margin: 0;
+padding: 0;
+line-height: 1.3;
+}
+
+.main-div {
+overflow: hidden;
+}
+
+img {
+max-width: 100%;
+max-height: 100%;
+}
+
+/*  ================================
+global area end
+================================ */
+
+/*  ================================
+header area start
+================================ */
+.header-area {
+padding: 30px 0;
+}
+
+.header-wraper {
+overflow: hidden;
+}
+
+.menu-part {
+text-align: right;
+}
+
+.menu-part ul {
+display: inline-block;
+padding: 0;
+}
+
+.menu-part ul li {
+display: inline-block;
+list-style: outside none none;
+}
+
+.menu-part ul li a {
+color: #1a1a1a;
+display: block;
+font-size: 18px;
+text-decoration: none;
+text-transform: uppercase;
+transition: all 0.5s ease 0s;
+font-family: 'Open Sans', sans-serif;
+padding: 5px 30px;
+font-weight: 800;
+}
+
+.menu-part ul li:last-child a {
+margin-right: 0;
+}
+
+/* menu part end */
+
+/*  ================================
+header area end
+================================ */
+
+/*  ================================
+product title area start
+================================ */
+
+.pro-title {
+border-radius: 5px;
+padding: 15px 10px;
+text-align: center;
+margin: 0 0 30px;
+}
+
+.pro-title>h2 {
+font-size: 24px;
+margin: 0;
+font-family: 'Open Sans', sans-serif;
+font-weight: 700;
+color: #fff;
+}
+
+/*  ================================
+product title area end
+================================ */
+.csslider {
+position: relative;
+}
+
+.csslider > input {
+display: none;
+}
+
+.csslider > input:nth-of-type(12):checked ~ ul li:first-of-type {
+margin-left: -1100%;
+}
+
+.csslider > input:nth-of-type(11):checked ~ ul li:first-of-type {
+margin-left: -1000%;
+}
+
+.csslider > input:nth-of-type(10):checked ~ ul li:first-of-type {
+margin-left: -900%;
+}
+
+.csslider > input:nth-of-type(9):checked ~ ul li:first-of-type {
+margin-left: -800%;
+}
+
+.csslider > input:nth-of-type(8):checked ~ ul li:first-of-type {
+margin-left: -700%;
+}
+
+.csslider > input:nth-of-type(7):checked ~ ul li:first-of-type {
+margin-left: -600%;
+}
+
+.csslider > input:nth-of-type(6):checked ~ ul li:first-of-type {
+margin-left: -500%;
+}
+
+.csslider > input:nth-of-type(5):checked ~ ul li:first-of-type {
+margin-left: -400%;
+}
+
+.csslider > input:nth-of-type(4):checked ~ ul li:first-of-type {
+margin-left: -300%;
+}
+
+.csslider > input:nth-of-type(3):checked ~ ul li:first-of-type {
+margin-left: -200%;
+}
+
+.csslider > input:nth-of-type(2):checked ~ ul li:first-of-type {
+margin-left: -100%;
+}
+
+.csslider > input:nth-of-type(1):checked ~ ul li:first-of-type {
+margin-left: 0;
+}
+
+.csslider > ul {
+box-sizing: border-box;
+font-size: 0;
+line-height: 0;
+margin: 0 auto;
+overflow: hidden;
+padding: 0;
+position: relative;
+white-space: nowrap;
+z-index: 1;
+}
+
+.csslider > ul > li {
+box-sizing: border-box;
+display: inline-block;
+font-size: initial;
+height: 100%;
+line-height: normal;
+overflow: hidden;
+position: relative;
+transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1) 0s;
+vertical-align: middle;
+white-space: normal;
+width: 100%;
+text-align: center;
+}
+
+.csslider > ul > li.scrollable {
+overflow-y: scroll;
+}
+
+.csslider > .navigation {
+text-align: center;
+margin-top: 15px;
+}
+
+.csslider > .navigation label {
+background: transparent none repeat scroll 0 0;
+border-radius: 50%;
+cursor: pointer;
+display: inline-block;
+padding: 4px;
+position: relative;
+width: 127px;
+height: 70px;
+vertical-align: middle;
+}
+
+.csslider > .navigation label img {
+max-height: 100%;
+}
+
+.csslider > .navigation label:hover::after {
+opacity: 1;
+}
+
+.csslider > .navigation label::after {
+background: transparent none repeat scroll 0 0;
+border-radius: 50%;
+content: "";
+left: 50%;
+margin-left: -6px;
+margin-top: -6px;
+opacity: 0;
+padding: 6px;
+position: absolute;
+top: 50%;
+}
+
+.csslider > .arrows {
+-moz-user-select: none;
+}
+
+.csslider.inside .navigation {
+bottom: 10px;
+margin-bottom: 10px;
+}
+
+.csslider.inside .navigation label {
+border: 1px solid #7e7e7e;
+}
+
+.csslider > input:nth-of-type(1):checked ~ .navigation label:nth-of-type(1)::after,
+.csslider > input:nth-of-type(2):checked ~ .navigation label:nth-of-type(2)::after,
+.csslider > input:nth-of-type(3):checked ~ .navigation label:nth-of-type(3)::after,
+.csslider > input:nth-of-type(4):checked ~ .navigation label:nth-of-type(4)::after,
+.csslider > input:nth-of-type(5):checked ~ .navigation label:nth-of-type(5)::after,
+.csslider > input:nth-of-type(6):checked ~ .navigation label:nth-of-type(6)::after,
+.csslider > input:nth-of-type(7):checked ~ .navigation label:nth-of-type(7)::after,
+.csslider > input:nth-of-type(8):checked ~ .navigation label:nth-of-type(8)::after,
+.csslider > input:nth-of-type(9):checked ~ .navigation label:nth-of-type(9)::after,
+.csslider > input:nth-of-type(10):checked ~ .navigation label:nth-of-type(10)::after,
+.csslider > input:nth-of-type(11):checked ~ .navigation label:nth-of-type(11)::after,
+.csslider > input:nth-of-type(12):checked ~ .navigation label:nth-of-type(12)::after {
+opacity: 1;
+}
+
+.csslider > .arrows {
+box-sizing: content-box;
+height: 26px;
+left: -31px;
+padding: 0 31px;
+position: absolute;
+top: 40%;
+width: 100%;
+z-index: 0;
+}
+
+.csslider > .arrows label {
+box-shadow: 2px -2px 0 1px #3a3a3a inset;
+cursor: pointer;
+display: none;
+padding: 13px;
+position: absolute;
+top: -50%;
+transition: box-shadow 0.15s ease 0s, margin 0.15s ease 0s;
+z-index: 9999;
+}
+
+.csslider > .arrows label:hover {
+box-shadow: 3px -3px 0 2px #D9842A inset;
+margin: 0;
+}
+
+.csslider.infinity > input:first-of-type:checked ~ .arrows label.goto-last,
+.csslider > input:nth-of-type(1):checked ~ .arrows > label:nth-of-type(0),
+.csslider > input:nth-of-type(2):checked ~ .arrows > label:nth-of-type(1),
+.csslider > input:nth-of-type(3):checked ~ .arrows > label:nth-of-type(2),
+.csslider > input:nth-of-type(4):checked ~ .arrows > label:nth-of-type(3),
+.csslider > input:nth-of-type(5):checked ~ .arrows > label:nth-of-type(4),
+.csslider > input:nth-of-type(6):checked ~ .arrows > label:nth-of-type(5),
+.csslider > input:nth-of-type(7):checked ~ .arrows > label:nth-of-type(6),
+.csslider > input:nth-of-type(8):checked ~ .arrows > label:nth-of-type(7),
+.csslider > input:nth-of-type(9):checked ~ .arrows > label:nth-of-type(8),
+.csslider > input:nth-of-type(10):checked ~ .arrows > label:nth-of-type(9),
+.csslider > input:nth-of-type(11):checked ~ .arrows > label:nth-of-type(10),
+.csslider > input:nth-of-type(12):checked ~ .arrows > label:nth-of-type(11),
+.csslider > input:nth-of-type(13):checked ~ .arrows > label:nth-of-type(12) {
+display: block;
+left: -27px;
+right: auto;
+transform: rotate(45deg);
+}
+
+.csslider.infinity > input:last-of-type:checked ~ .arrows label.goto-first,
+.csslider > input:nth-of-type(1):checked ~ .arrows > label:nth-of-type(2),
+.csslider > input:nth-of-type(2):checked ~ .arrows > label:nth-of-type(3),
+.csslider > input:nth-of-type(3):checked ~ .arrows > label:nth-of-type(4),
+.csslider > input:nth-of-type(4):checked ~ .arrows > label:nth-of-type(5),
+.csslider > input:nth-of-type(5):checked ~ .arrows > label:nth-of-type(6),
+.csslider > input:nth-of-type(6):checked ~ .arrows > label:nth-of-type(7),
+.csslider > input:nth-of-type(7):checked ~ .arrows > label:nth-of-type(8),
+.csslider > input:nth-of-type(8):checked ~ .arrows > label:nth-of-type(9),
+.csslider > input:nth-of-type(9):checked ~ .arrows > label:nth-of-type(10),
+.csslider > input:nth-of-type(10):checked ~ .arrows > label:nth-of-type(11),
+.csslider > input:nth-of-type(11):checked ~ .arrows > label:nth-of-type(12) {
+display: block;
+left: auto;
+right: -27px;
+transform: rotate(225deg);
+}
+
+.csslider ul li img {
+height: auto;
+width: auto;
+max-height: 100%;
+}
+
+.navigation > label {
+border: 1px solid #ddd;
+border-radius: 5px !important;
+margin-bottom: 5px;
+}
+
+/*  ================================
+product area start
+================================ */
+
+.product-wraper {
+border: 1px solid #D1D1D1;
+overflow: hidden;
+padding: 0 20px 30px;
+}
+
+.gallery-content {
+text-align: center;
+margin-top: 30px;
+}
+
+.product-dec h3 {
+color: #1a1a1a;
+text-transform: capitalize;
+font-size: 20px;
+margin: 30px 0 20px;
+font-weight: 700;
+}
+
+.product-dec h4 {
+font-weight: 700;
+color: #1a1a1a;
+font-size: 20px;
+line-height: 1.3;
+margin-bottom: 20px;
+}
+
+.product-dec h5 {
+font-family: 'Open Sans', sans-serif;
+font-weight: 600;
+color: #1a1a1a;
+font-size: 16px;
+line-height: 1.3;
+margin-bottom: 5px;
+}
+
+.product-dec ul,
+.tab-list ul {
+margin: 0;
+padding: 0;
+}
+
+.product-dec ul li,
+.tab-list ul li {
+position: relative;
+padding-left: 20px;
+list-style: none;
+margin-bottom: 15px;
+}
+
+.product-dec ul li::before,
+.tab-list ul li::before {
+position: absolute;
+left: 0;
+content: "\f046";
+font-family: fontawesome;
+font-weight: 400;
+}
+
+/*  ================================
+product area end
+================================ */
+
+/*  ================================
+tab area start
+================================ */
+
+.tab-part-area {
+padding: 50px 0 30px;
+}
+
+section.tab-section {
+display: none;
+padding: 40px 45px;
+border: 1px solid #ddd;
+color: #1a1a1a;
+overflow: hidden;
+}
+
+.tab-part-area input {
+display: none;
+}
+
+.tab-part-area label {
+color: #000;
+font-size: 16px;
+font-weight: 600;
+border: 1px solid transparent;
+display: inline-block;
+margin: 0 0 -1px;
+padding: 10px 30px;
+text-align: center;
+text-transform: uppercase;
+background-color: #F8F8FA;
+border: 1px solid #ddd;
+transition: 0.5s;
+}
+
+.tab-part-area label:hover {
+cursor: pointer;
+color: #fff;
+}
+
+.tab-part-area input:checked+label {
+color: #fff;
+}
+
+#tab1:checked~#content1,
+#tab2:checked~#content2,
+#tab3:checked~#content3,
+#tab4:checked~#content4,
+#tab5:checked~#content5 {
+display: block;
+}
+
+.tab-section h3 {
+color: #000;
+font-weight: 600;
+font-size: 18px;
+margin: 0 0 15px;    
+}
+
+/*  ================================
+tab area end
+================================ */
+
+/*  ================================
+footer area end
+================================ */
+
+.footer-area p {
+padding: 20px 0;
+}
+
+.footer-area p {
+font-size: 16px;
+font-weight: 600;
+color: #fff;
+}
+
+/*  ================================
+footer area end
+================================ */
+
+/***** medium Layout *****/
+
+@media (min-width: 992px) and (max-width: 1200px) {}
+
+/***** Tablet Layout *****/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.menu-part ul li a {
+padding: 0 10px;
+}
+}
+
+/***** Mobile Layout *****/
+
+@media only screen and (max-width: 767px) {
+
+*,
+p,
+.footer-area p,
+.footer-area p a {
+font-size: 15px;
+}
+
+.gallery-content {
+height: auto;
+}
+.csslider > .navigation label {
+width: 70px;
+height: 50px;
+}
+.logo {
+text-align: center;
+margin-bottom: 30px;
+}
+
+.menu-part {
+text-align: center;
+padding-top: 0;
+}
+
+.menu-part ul li a {
+font-size: 16px !important;
+padding: 0 9px;
+margin: 0;
+border-bottom: 0;
+}
+
+.pro-title>h2 {
+font-size: 18px;
+}
+
+.product-wraper {
+padding: 0 20px 30px;
+}
+
+.product-dec {
+margin-top: 30px;
+}
+
+.product-dec h3 {
+font-size: 18px;
+}
+
+.product-dec h4 {
+font-size: 16px;
+}
+
+.des-content {
+padding: 15px;
+}
+
+.des-content h1,
+.des-content h2 {
+font-size: 16px;
+}
+
+.tab-part-area label {
+display: block;
+}
+
+section.tab-section {
+padding: 20px 0;
+}
+
+.ex {
+margin: 0;
+padding: 0;
+}
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="main-div">
+<!-- ======= header area start ======= -->
+<header class="header-area">
+<div class="header-wraper">
+<div class="container">
+<div class="row">
+<!-- header wraper start -->
+<div class="col-md-3 col-sm-4">
+<!-- logo start -->
+<div class="logo">
+<a href="https://www.ebay.com.au/str/magicminihouse" target="_blank"><img src="https://chaite25.github.io/magicminihouse-ebay-template/images/logo.png" alt=""></a>
+</div>
+<!-- logo end -->
+</div>
+<div class="col-md-9 col-sm-8">
+<!-- menu start -->
+<div class="menu-part">
+<nav>
+<ul>
+<li><a href="https://www.ebay.com.au/str/magicminihouse" target="_blank">shop</a></li>
+<li><a href="https://www.ebay.com.au/str/magicminihouse?_tab=about" target="_blank">about us</a></li>
+<li><a href="https://www.ebay.com.au/cnt/intermediatedFAQ?requested=realminico" target="_blank">contact us</a></li>
+</ul>
+</nav>
+</div>
+<!-- menu end -->
+</div>
+</div>
+<!-- header wraper end -->
+</div>
+</div>
+</header>
+<!-- ======= header area end ======= -->
+
+<!-- ======= product title area start ======= -->
+<section class="gallery-area">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="pro-title">
+<h2>
+
+<!-- product title start -->
+
+Real Food Grade Mini Food Cooking Kitchen Set</h2><h2>Real Working Metal Stove- Utensils- Cooking Pot &amp; Pan&nbsp;</h2>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ======= product title area end ======= -->
+
+<!-- ======= product images area start ======= -->
+<section class="product-area">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<!-- product wraper star -->
+<div class="product-wraper">
+
+<div class="col-md-6">
+<!-- images gallery part start -->
+<div class="gallery-content">
+<div class="rt-container">
+<div class="csslider infinity" id="slider1">
+<input name="slides" checked="checked" id="slides_1" type="radio">
+<input name="slides" id="slides_2" type="radio">
+<input name="slides" id="slides_3" type="radio">
+<input name="slides" id="slides_4" type="radio">
+<input name="slides" id="slides_5" type="radio">
+<input name="slides" id="slides_6" type="radio">
+<input name="slides" id="slides_7" type="radio">
+<input name="slides" id="slides_8" type="radio">
+<input name="slides" id="slides_9" type="radio">
+<input name="slides" id="slides_10" type="radio">
+<input name="slides" id="slides_11" type="radio">
+<input name="slides" id="slides_12" type="radio">
+
+
+<ul>
+
+<li>
+<!-- big gallery images 1 -->
+<img src="https://i.ebayimg.com/images/g/NLgAAOSwmKdmQ~tk/s-l1600.jpg" alt="">
+</li>
+
+<li>
+<!-- big gallery images 2 -->
+<img src="https://i.ebayimg.com/images/g/D9oAAOSw4RRmRD9E/s-l1600.jpg" alt="">
+</li>
+
+<li>
+<!-- big gallery images 3 -->
+<img src="https://i.ebayimg.com/images/g/WCwAAOSwkwhmRD9O/s-l1600.jpg" alt="">
+</li>
+
+<li>
+<!-- big gallery images 4 -->
+<img src="https://i.ebayimg.com/images/g/GQ0AAOSw5uNmRD9V/s-l1600.jpg" alt="">
+</li>
+
+<li>
+<!-- big gallery images 5 -->
+<img src="https://i.ebayimg.com/images/g/PIsAAOSwL-VmRD-x/s-l1600.jpg" alt="">
+</li>
+
+<li>
+<!-- big gallery images 6 -->
+<img src="https://i.ebayimg.com/images/g/FCwAAOSwX9lmRD~Z/s-l1600.jpg" alt="">
+</li>
+
+<li>
+<!-- big gallery images 7 -->
+<img src="https://i.ebayimg.com/images/g/HhwAAOSwzStmREAT/s-l1600.jpg" alt="">
+</li>
+
+<li>
+<!-- big gallery images 8 -->
+<img src="https://i.ebayimg.com/images/g/PIsAAOSwL-VmRD-x/s-l1600.jpg" alt="">
+</li>
+
+</ul>
+
+
+<div class="navigation">
+
+<label for="slides_1">
+<!-- small gallery images 1 -->
+<img src="https://i.ebayimg.com/images/g/NLgAAOSwmKdmQ~tk/s-l1600.jpg" alt="">
+</label>
+
+<label for="slides_2">
+<!-- small gallery images 2 -->
+<img src="https://i.ebayimg.com/images/g/D9oAAOSw4RRmRD9E/s-l1600.jpg" alt="">
+</label>
+
+<label for="slides_3">
+<!-- small gallery images 3 -->
+<img src="https://i.ebayimg.com/images/g/WCwAAOSwkwhmRD9O/s-l1600.jpg" alt="">
+</label>
+
+<label for="slides_4">
+<!-- small gallery images 4 -->
+<img src="https://i.ebayimg.com/images/g/GQ0AAOSw5uNmRD9V/s-l1600.jpg" alt="">
+</label>
+
+<label for="slides_5">
+<!-- small gallery images 5 -->
+<img src="https://i.ebayimg.com/images/g/PIsAAOSwL-VmRD-x/s-l1600.jpg" alt="">
+</label>
+
+<label for="slides_6">
+<!-- small gallery images 6 -->
+<img src="https://i.ebayimg.com/images/g/FCwAAOSwX9lmRD~Z/s-l1600.jpg" alt="">
+</label>
+
+<label for="slides_7">
+<!-- small gallery images 7 -->
+<img src="https://i.ebayimg.com/images/g/HhwAAOSwzStmREAT/s-l1600.jpg" alt="">
+</label>
+
+<label for="slides_8">
+<!-- small gallery images 8 -->
+<img src="https://i.ebayimg.com/images/g/PIsAAOSwL-VmRD-x/s-l1600.jpg" alt="">
+</label>
+
+</div>
+</div>
+</div>
+</div>
+<!-- images gallery part end -->
+</div>
+<div class="col-md-6 ex">
+<div class="product-dec">
+
+<!-- product discription part start -->
+<h3>Product details:</h3>
+<p>Real Food Grade Mini Food Cooking Miniature Kitchen Set as shown in the picture.</p><ul><li>Cast iron real cooking stove with 3 doors.</li><li>Wooden Range hood with remote control lighting.</li><li>Tile wall panel and floor panel room box.</li><li>Stainless steel cooking pot and pan.</li><li>Wooden cooking spoon.</li><li>Wooden chopping board.</li><li>Real working chef knife.</li><li>Cast iron cooking utensils with wood handle.</li><li>Natural jute basket and rug.</li><li>Suitable for dollhouse display and real mini cooking tiny kitchen.</li></ul><ul>
+</ul>
+
+<h3>What is included:</h3>
+<p>1 X Cast iron real cooking stove with 3 doors.</p><p>&nbsp;1 X Wooden Range hood with remote control lighting.</p><p>&nbsp;1 X Wooden fridge.</p><p>&nbsp;1 X kitchen wall rack.&nbsp;</p><p>&nbsp;1 X kitchen island.</p><p>&nbsp;1 X Tile wall panel and floor panel room box.</p><p>&nbsp;1 x Stoneware cooking pot.</p><p>&nbsp;1 x Stoneware cooking pan.</p><p>&nbsp;1 x&nbsp; Wooden cooking spoon.</p><p>&nbsp;1 x Wooden chopping board.</p><p>&nbsp;1 x Real working chef knife.</p><p>&nbsp;1 x Iron cooking spatula with wood handle.</p><p>&nbsp;1 x Natural jute basket.</p><p>&nbsp;1 x Natural jute rug.</p><p>&nbsp;2 x Ceramic white plates.</p><p>&nbsp;2 x Ceramic white mugs.</p><p>&nbsp;2 x Glass source bottle.</p><p>&nbsp;1 x Glass bowl.</p><p>&nbsp;1 x Ceramic jar.</p><p>&nbsp;1 x Stainless steel whisk.</p><p>&nbsp;1 x Wood spatula.</p>
+
+<h3>Measurements:</h3>
+<ul>
+<li>Cast Iron Stove : 9.5 x 8 x 5.6 cm</li><li>Stainless Steel cooking pot: 4 x 11 cm</li><li>Stainless Steel cooking pan: 7.5 cm</li><li>Wooden spoon: 6.5 cm</li><li>Stainless steel utensil: 8.5 cm</li><li>Chef knife: 6.5 cm</li><li>Fridge: 5.5 x 15 x 4.5 cm</li><li>Kitchen island: 12.5 x 7 x 6.5 cm</li>
+</ul>
+<!-- product discription part end -->
+
+</div>
+</div>
+</div>
+<!-- product wraper end -->
+</div>
+</div>
+</div>
+</section>
+<!-- ======= product images area end ======= -->
+
+<div class="tab-part-area">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="tab-area">
+<input id="tab1" name="tabs" checked="" type="radio">
+<label for="tab1">Shipping</label>
+<input id="tab2" name="tabs" type="radio">
+<label for="tab2">payment</label>
+<input id="tab3" name="tabs" type="radio">
+<label for="tab3">Returns</label>
+<input id="tab4" name="tabs" type="radio">
+<label for="tab4">Help &amp; FAQs</label>
+
+<!-- tab shipping start -->
+<section id="content1" class="tab-section">
+<div class="col-md-12">
+<div class="tab-list">
+<h3>Production/Lead Time</h3>
+<ul>
+<li>In stock item lead time approximately 1-3 days. </li>
+<li>Please message me if you need the item sooner- I'll make every effort to fill your request.</li>
+<li>When an order that contains different lead time products will be fulfilled in separate shipments.</li>
+</ul>
+
+<h3>Postage and Delivery</h3>
+<ul>
+<li>Combined postage will be calculated at the checkout, overages will be refunded after dispatch.</li>
+<li>Under normal circumstances, domestic parcel can be delivered within 2-5 working days to Australian addressee after dispatch, 6-12 Business days for International Customers. International delivery time involves many correlated factors, we can’t guarantee the delivery time simply the delivery is out of our control. When you need an item in urgent, you have to use your own judgement to decide whether the purchase can reach you on time. International parcel can be vary depends your location, the freight routine, customs clearance and how fast the delivery in your country.</li>
+<li>We are not responsible for any tax, duty charges from customs in your country if 
+there is any.</li></ul><ul>
+</ul>
+
+</div>
+</div>
+</section>
+<!-- tab shipping end -->
+
+<!-- tab Payment start -->
+<section id="content2" class="tab-section">
+<div class="col-md-12">
+<div class="tab-list">
+<ul>
+<li>Accept all major credit cards</li>
+</ul>
+<img src="https://chaite25.github.io/magicminihouse-ebay-template/images/payment.png" alt="">
+<br>
+<br>
+<p><b>Questions: Please message us if you have any questions or concerns.</b></p>
+</div>
+</div>
+</section>
+<!-- tab Payment end -->
+
+<!-- tab returns start -->
+<section id="content3" class="tab-section">
+<div class="col-md-12">
+<div class="tab-list">
+
+<h3>Return &amp; Refund</h3>
+<ul>
+<li>If you are not satisfied with your purchase, you can return it for a refund.</li>
+<li>Only item price is eligible for refund. Postage is NOT refundable. Free postage item actual postage will be deducted from the refund amount.</li> 
+<li>For refunds the item must be in sale able condition with original packaging and complete with all components and accessories or only partial refund will be provided.</li>
+<li>For return &amp; refund item, buyer is liable for return postage and safety of the parcel.</li>
+</ul>
+<h3>Disclaimer</h3>
+<ul>
+<li>We assume no responsibility for any accidents directly or indirectly related to our products.</li> 
+<li>The majority of the items we sell are unsuitable for children due to the intricate nature of the products, and are designed for adult collectors only.</li>
+<li>All our miniature items are NOT suitable for Children under 14. Ensure that there's adult supervision all the time when play real miniature kitchen with kids.</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- tab returns end -->
+
+<!-- tab contact start -->
+<section id="content4" class="tab-section">
+<div class="col-md-12">
+<div class="tab-list">
+<p>Welcome to Magic Mini House! Here you will find 1:6 1:12 1:24 scale unique Dolls house furniture, miniatures, Dolls house decor, dolls fashion accessories shoes and clothes, real mini cooking supplies and other little pieces of happiness.</p>
+<p>For more information about my shop, please read following store policy. Thank you for stopping by! :)</p>
+<br>
+<h3>Dollhouse Scale. What do I have/What size should I buy?</h3>
+<ul>
+<li>Each dollhouse scale represents a proportional relationship between the miniature and its real-life counterpart.</li>
+</ul>
+<p><b>Here are the details for the specified scales:</b></p>
+<ul>
+<li>1:6 Scale (Play scale or Fashion Doll Scale). In this scale, 1 inch corresponds to 6 inches in full size. Adult dolls are typically around 12 inches (30.5 centimeters) tall in this scale.</li>
+<li>Commonly used for fashion dolls like Blythe, and collectible action figures.</li>
+<li>1:12 Scale (One Inch to One Foot). Widely accepted among collectors of artisan miniatures.</li>
+<li>Most adult dolls are depicted between 5 inches (12.7 centimeters) and 6 inches (15.2 centimeters) in height. Commonly used for OB11 dolls.</li>
+</ul>
+<h3>Product info</h3>
+<ul>
+<li>All our detailed scale miniature items are intended for collectors’ dolls house display, NOT suitable for children under the age of 14.</li>
+<li>Please check out the pictures and description for the size, make sure the item is the right size for you, please make up your mind before order. </li>	
+</ul>
+<h3>Review</h3>
+<ul>
+<li>Once your item arrives in satisfying condition, please leave feedback &amp; 5 stars rating as building good reputation on eBay is very important to us, and we will share your review with store team to keep up the amazing work.</li>
+<li>If you have any problem with items on arrival, please email us immediately, we will sort it out within 48 hours. If you are not satisfied with our service, please share with us your expectation, and we are happy to listen to and explore any improvement possibility. </li>
+<li>We do care for each step during the transaction, any errors happened during the process which is unintentional. If problem do arise, please contact me first before leaving negative review. Negative review does not resolve issues, communication does.</li>
+</ul>
+
+<h3>Safety Notices</h3>
+<p>Your safety is our top priority, and adhering to the instructions in our safety notices will guarantee you a premium experience.</p>
+<p><b>5V Real mini cooking USB mixer and stove.</b></p>
+<p>Our 5V USB real mini cooking mixer and stove products are hobby product for adult real mini cooking miniaturists, designed to filming captivating videos. Children under the age of 14 must be supervised at all time while play. They do not run at the same voltage and are not manufactured to the same specifications as regular household electrical products. They are not designed to be used for long periods of time. (maximum 15 mins) and please allowing the item to cool thoroughly between uses.</p>
+
+<p><b>Real mini cooking heating source</b></p>
+<p>Our real mini cooking stove products are hobby product for adult real mini cooking miniaturists, designed to filming captivating videos.
+If you’re using a miniature stove or heat source, be cautious. Even though tea light candle flame is small, it can still get hot. Avoid touching it directly.
+Keep the flame low and controlled. Miniature flames can still cause burns or ignite tiny materials.
+</p>
+<p><b>12v Mains-Powered Wired Lights and Components</b></p>
+<p>Our 12v wired lighting products are hobby product for adult miniaturists, designed to bring life and light to your dolls houses and 1:12 and 1:6 scale models.
+They do not run at the same voltage and are not manufactured to the same specifications as regular household lighting or electrical products. They are not designed to be used for long periods of time. (maximum 1 hour) and please allowing the transformer to cool thoroughly between uses.
+</p>
+<p><b>Battery-Operated Lights Containing Lithium Button Batteries</b></p>
+<p>Our battery-operated lights are hobby product for adult miniaturists, designed to bring life and light to your dollhouses and 1:12 scale 1:6 scale models.</p>
+<p>They are not suitable for children under the age of 14 and any batteries, or products containing batteries, should be always kept out of reach of children.</p>
+<p><b>WARNING: CHOKING HAZARD - Small Parts</b></p>
+<p>Our miniature models are hobby products designed for adult miniaturists and collectors. NONE of the products available to purchase on our website are suitable for children under the age of 14. Most contain very small parts which constitute a choking hazard and should be always kept well out of reach of young children. Children under the age of 14 must be supervised at all time while playing dollhouse and real mini kitchen.</p>
+</div>
+</div>
+</section>
+<!-- tab contact end -->
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ======= footer area star ======= -->
+<footer class="footer-area">
+<div class="container">
+<div class="row">
+<div class="col-md-12 text-center">
+<!-- logo start -->
+<div class="footer-logo">
+<a href="" target="_blank"><img src="logo.jpg" alt=""></a>
+</div>
+<!-- logo end -->
+<p>Copyrights All Rights Reserved-Magic Mini House</p>
+</div>
+</div>
+</div>
+</footer>
+<!-- ======= footer area end ======= -->
+</div>
+
+</body>
+
+</html>
